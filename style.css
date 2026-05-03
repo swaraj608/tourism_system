@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  background: #0077cc;
+  color: white;
+  padding: 15px;
+}
+
+.destination {
+  background: white;
+  margin: 20px auto;
+  padding: 15px;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.destination h3 {
+  margin: 0;
+  color: #333;
+}
+
+.destination p {
+  margin: 5px 0;
+}
+
+a.book-btn {
+  display: inline-block;
+  background: #28a745;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a.book-btn:hover {
+  background: #218838;
+}
