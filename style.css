@@ -1,62 +1,172 @@
+/* General Reset */
 body {
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  background: linear-gradient(to right, #f0f4f8, #e6ecf3);
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #e3f2fd);
   margin: 0;
   padding: 0;
+  color: #333;
 }
 
+/* Navigation Bar */
+nav {
+  background: linear-gradient(90deg, #004080, #0066cc);
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+nav a {
+  color: #fff;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Landing Section */
+.landing {
+  background: url('images/landing-bg.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  position: relative;
+}
+.landing::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+.landing h1, .landing p, .cta-btn {
+  position: relative;
+  z-index: 1;
+}
+.landing h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+.landing p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.cta-btn {
+  background: #ff6600;
+  color: white;
+  padding: 14px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.cta-btn:hover {
+  background: #e65c00;
+  transform: scale(1.05);
+}
+
+/* Section Headings */
 h2 {
   text-align: center;
-  background: #004080;
-  color: #fff;
-  padding: 20px;
-  margin: 0;
-  font-size: 28px;
-  letter-spacing: 1px;
+  margin: 50px 0 20px;
+  color: #004080;
+  font-size: 32px;
+  font-weight: 700;
 }
 
+/* Destination Cards */
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 30px;
-}
-
-.destination {
-  background: #fff;
-  margin: 15px;
+  gap: 25px;
   padding: 20px;
-  width: 280px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
-.destination:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+.destination {
+  background: white;
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.destination img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 .destination h3 {
-  margin: 0;
+  margin: 15px 0 10px;
   color: #004080;
+  text-align: center;
 }
-
 .destination p {
-  margin: 8px 0;
-  color: #333;
+  margin: 5px 15px;
+  color: #555;
+}
+.destination:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.25);
 }
 
-a.book-btn {
-  display: inline-block;
+/* Buttons */
+.book-btn {
+  display: block;
   background: #ff6600;
   color: white;
-  padding: 10px 15px;
+  padding: 12px;
+  text-align: center;
+  margin: 15px;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
+  transition: background 0.3s ease;
+}
+.book-btn:hover {
+  background: #e65c00;
 }
 
-a.book-btn:hover {
-  background: #e65c00;
+/* Forms */
+.form-box {
+  width: 60%;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.form-box input, .form-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.form-box button {
+  background: #004080;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.form-box button:hover {
+  background: #0066cc;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #004080, #0066cc);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+footer p {
+  margin: 5px 0;
 }

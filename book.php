@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
   <h2>Book Your Trip</h2>
-  <form method="POST" style="width:60%; margin:auto; background:white; padding:20px; border-radius:8px;">
+  <form method="POST" class="form-box">
     <input type="hidden" name="destination_id" value="<?php echo $_GET['id']; ?>">
     <label>Name:</label><br>
     <input type="text" name="name" required><br><br>
